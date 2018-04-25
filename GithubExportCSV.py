@@ -1,8 +1,3 @@
-"""
-Exports Issues from a specified repository to a CSV file
-Uses basic authentication (Github username + password) to retrieve Issues
-from a repository that username has access to. Supports Github API v3.
-"""
 import csv
 import requests
 import argparse
