@@ -18,7 +18,7 @@ optional arguments: <br />
                        
 # Usage Build executable from Source
 - pip install cx_freeze
--navigate to the directory of the files
+- navigate to the directory of the files
 - python setup.by build
 
 # Usage Pre-built Exe - Windows
