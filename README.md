@@ -4,7 +4,6 @@ A Python Tool for Exporting Issues in a Github Repo to a csv
 # Parameters
 > usage: GithubExportCSV.exe [-h] --username GITHUBUSERNAME --password
 >                           GITHUBPASSWORD --repo REPO [--filepath PATH]
-
 > optional arguments:
 >  -h, --help            show this help message and exit
 >  --username GITHUBUSERNAME, -u GITHUBUSERNAME
