@@ -3,7 +3,7 @@ import requests
 import argparse
 import os
 import backoff
-from requests import RequestException, HTTPError, ConnectionError, ConnectTimeout, Timeout, ReadTimeout, TooManyRedirects
+from requests import RequestException, HTTPError, ConnectionError, ConnectTimeout, Timeout, ReadTimeout, TooManyRedirects, ConnectionAbortedError
 
 
 def write_issues(r,csvout):
@@ -49,7 +49,7 @@ def intial_login(auth,url,path):
         csvout.writerow(('id', 'Title', 'Labels', 'Created At', 'Updated At', 'Status', 'Assigned'))
         write_issues(r,csvout)
         return r, csvout
-    except (RequestException, HTTPError, ConnectionError, ConnectTimeout, Timeout, ReadTimeout, TooManyRedirects) as e:
+    except (RequestException, HTTPError, ConnectionError, ConnectTimeout, Timeout, ReadTimeout, TooManyRedirects, ConnectionAbortedError) as e:
         print("A Connection Error Occured Retrying")
         raise RequestException
 
@@ -70,7 +70,7 @@ def remaining_pages(auth,r,csvout,pages):
                     [link.split(';') for link in
                         r.headers['link'].split(',')]])
         return currentpage
-    except (RequestException, HTTPError, ConnectionError, ConnectTimeout, Timeout, ReadTimeout, TooManyRedirects) as e:
+    except (RequestException, HTTPError, ConnectionError, ConnectTimeout, Timeout, ReadTimeout, TooManyRedirects, ConnectionAbortedError) as e:
         print("A Connection Error Occured Retrying")
         raise RequestException
 
