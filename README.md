@@ -2,7 +2,7 @@
 A Python Tool for Exporting Issues in a Github Repo to a csv
 
 # Parameters
-'usage: GithubExportCSV.exe [-h] --username GITHUBUSERNAME --password
+' usage: GithubExportCSV.exe [-h] --username GITHUBUSERNAME --password
                           GITHUBPASSWORD --repo REPO [--filepath PATH]
 optional arguments:
 -h, --help            show this help message and exit
@@ -14,7 +14,7 @@ optional arguments:
 --repo REPO, -r REPO  The Repository to connect to in the format
                     username/repo (e.g. 9l1ves/GithubExportIssuesCSV)
 --filepath PATH, -f PATH
-                     The path where you want the CSV file stored'
+                     The path where you want the CSV file stored '
                        
 # Usage Build executable from Source
 - pip install cx_freeze
