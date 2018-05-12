@@ -1,3 +1,5 @@
+<a href="https://pyup.io/repos/github/9l1ves/GithubExportIssuesCSV/"><img src="https://pyup.io/repos/github/9l1ves/GithubExportIssuesCSV/shield.svg" alt="Updates" /></a>
+<a href="https://pyup.io/repos/github/9l1ves/GithubExportIssuesCSV/"><img src="https://pyup.io/repos/github/9l1ves/GithubExportIssuesCSV/shield.svg" alt="Python 3" /></a>
 # GithubExportIssuesCSV
 A Python Tool for Exporting Issues in a Github Repo to a csv
 
