@@ -30,3 +30,4 @@ optional arguments: <br />
 - Open Command Prompt
 - Navigate to the exe.win32-3.6 folder on the pc
 - execute githubexportcsv.exe with the above mentioned parameters.
+
