@@ -1,1 +1,1 @@
-backoff==1.6.0
+backoff==1.7.1
